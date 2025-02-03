@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Titre du document</title>
+ <meta charset="utf-8"/>
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+ </head>
+ <body>
+  <div class="w3-bar"></div>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/index.html" class="w3-button">Page d'accueil</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/page_comp%C3%A9tence.html" class="w3-button">Mes compétences ⭐</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/page_projet.html" class="w3-button">Mes projets</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/page_basket.html" class="w3-button">Ma carrière de basketteur 🏀</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/Page_contact.html" class="w3-button">Contactez-moi !</a>
+</div>
+
+<h1>Projet signalisation en 1STI2D2</h1>
+le but était de créer et programmer un petit panneau LED et un joystick pour permettre à un cycliste ou une trotinette électrique de signaler ses intentions telles que tourner, avancer, s'arrèter.
+
+</br>
+
+<div class="w3-container w3-teal">
+  <h1>Projet signalisation</h1>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
+  </div>
+</div>
+
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="projetSIN1ere.jpg" style="width:50%" onclick="onClick(this)">
+      <div class="w3-container">
+        <h5>STOP</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <img src="fleche-projet.jpg" style="width:50%" onclick="onClick(this)">
+      <div class="w3-container">
+        <h5>Flèche directionnelle</h5>
+      </div>
+    </div>
+  </div>
+
+</br>
+</br>
+</br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="w3-container w3-teal">
+  <h1>Autres projets personnelles</h1>
+</div>
+<br>
+Jeux vidéos créés sur scratch au collège pour les cours et pour m'occuper.
+
+
+
+
+<br><br>
+Modélisation de carte sur Unreal Engine 5 et mouvements basiques du joueur.
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  </script>
+<br><br><br>
+</div>
+<div class="w3-container">
+  <a href="#" class="w3-btn w3-black">Remonter ?</a>
+</div>
+ </body>
+</html>
