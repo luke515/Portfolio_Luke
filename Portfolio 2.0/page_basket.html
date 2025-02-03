@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Ma carrière de basketteur (pas professionelle)</title>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+ </head>
+ <body>
+   
+  <div class="w3-bar"></div>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/index.html" class="w3-button">Page d'accueil</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/page_comp%C3%A9tence.html" class="w3-button">Mes compétences ⭐</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/page_projet.html" class="w3-button">Mes projets</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/page_basket.html" class="w3-button">Ma carrière de basketteur 🏀</a>
+  <a href="file:///Z:/SIN/D%C3%A9veloppement/Portfolio%202.0/Page_contact.html" class="w3-button">Contactez-moi !</a>
+</div>
+     
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+    <!-- Push down content on small screens --> 
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Basketball</b></h1>
+  <p><b>Quelques photos de moi et mes équipiers</b>
+    <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Activer Grid Padding</button></p>
+    <p>Je joue à  <a href="https://ascb-basket.com">l'ASCB</a></p>
+</header>
+</div>
+<div class="w3-container w3-right w3-animate-top">
+  <h1>🏀</h1>
+</div>
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="bannière_champion_departemental.jpg" style="width:100%" onclick="onClick(this)" alt="Bannière bannière_champion_departemental">
+    <img src="banger.jpg" style="width:100%" onclick="onClick(this)" alt="Entre-deux contre Toulouges">
+
+    
+  
+  </div>
+
+  <div class="w3-third">
+    <img src="podium.jpg" style="width:100%" onclick="onClick(this)" alt="VICTOIRE !">
+    <img src="match.jpg" style="width:100%" onclick="onClick(this)" alt="échauffement avant la finale de la coupe de l'Hérault">
+ 
+
+    
+  </div>
+
+  <div class="w3-third">
+ 
+    <img src="bannière_coupe.jpg" style="width:100%" onclick="onClick(this)" alt="Bannière de la coupe de l'Hérault">
+    <img src="affiche_palmares.jpg" style="width:100%" onclick="onClick(this)" alt="Palmarès saison 2021/2022">
+
+ 
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-xlarge w3-display-topright">X</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+<div class="w3-container">
+  <a href="#" class="w3-btn w3-black">Remonter ?</a>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+
+
+  // Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+ </body>
+</html>
